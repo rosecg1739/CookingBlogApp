@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Profile</title>
+</head>
+<body>
+    <h1>Edit Your Profile</h1>
+
+    <form action="/updateProfile" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= user.name %>">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="<%= user.email %>">
+
+        <!-- Add more fields as necessary -->
+
+        <button type="submit">Update Profile</button>
+    </form>
+</body>
+</html>
